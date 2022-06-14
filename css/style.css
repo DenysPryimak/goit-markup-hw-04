@@ -147,7 +147,9 @@ p:last-child {
 }
 
 
+
 .contacts-link {
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -159,12 +161,29 @@ p:last-child {
     text-decoration: none;
 }
 
+.mail-icon,
+.phone-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
 /* -------------------------------------------Hero */
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-color: var(--header-section-bg-color);
+    background-color: #C4C4C4;
+   
+}
+
+.overlay {
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -226,6 +245,23 @@ p:last-child {
 .benefits-item:not(:last-child) {
     margin-right: 30px;
 
+}
+
+.about-icon-wrap {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+}
+
+.about-icon {
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -318,6 +354,82 @@ p:last-child {
     text-align: center;
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 16px;
+}
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+}
+
+.socials-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.socials-item {
+    margin-right: 10px;
+}
+
+.socials-item:last-child {
+    margin-right: 0;
+
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--accent-text-color);
+    color: var(--accent-header-name-color);
+} 
+
+.socials-icons {
+    fill: currentColor;
+}
+
+
+.container.clients {
+    padding-top: 49px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--titile-text-color);
+    
+    margin-bottom: 50px;
+}
+
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients .link:hover,
+.clients .link:focus {
+    border-color: var(--accent-text-color);
+    color: var(--accent-text-color);
+}
+
+.clients-icon {
+    fill: currentColor;
 }
 /* --------------------------------Footer */
 
@@ -325,6 +437,17 @@ p:last-child {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--header-section-bg-color);
+    
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.address-container {
+    margin-right: 70px;
+
 }
 
 .footer .logo {
@@ -367,6 +490,27 @@ p:last-child {
 .footer-link:hover,
 .footer-link:focus {
     color: var(--accent-text-color);
+}
+
+.join-title {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--accent-header-name-color);
+}
+
+.join .link {
+    border-radius: 50%;
+    color: var(--accent-header-name-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join .link:hover,
+.join .link:focus {
+    background-color: var(--accent-text-color);
 }
 /* ----------------------------------------------Portfolio button */
 .button-list {
@@ -421,6 +565,11 @@ p:last-child {
     border-style: none;
     cursor: pointer;
 }
+
+.button-item:hover,
+.button-item:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 /* ------------------------------------------------------Portfolio list */
 .portfolio-title {
     font-weight: 700;
@@ -465,4 +614,9 @@ p:last-child {
 
 .portfolio-link {
     text-decoration: none;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
